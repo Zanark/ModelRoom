@@ -1,0 +1,66 @@
+Model Room development journal
+Status: IN_PROGRESS
+Milestone: Perpetual causal development record
+Dependencies: None
+Purpose:
+Preserve actual changes, reasons, failures and evidence across finite workstreams.
+Tasks:
+- [ ] Keep this perpetual ledger current; not an issue or completion claim.
+Acceptance criteria:
+Entries separate plans, implementation, executed qualification and human approval.
+Completion evidence:
+This ledger has no final completion state.
+Completion log:
+- 2026-11-08 / Foundation publication authorization:
+  User explicitly requests "first add commit and push" before the newly
+  requested rigged-human, pose, animation and imported-rig implementation.
+  At this boundary no rigging source changes have been made. Stage only the
+  working foundation and its public documentation; private context/evidence,
+  dependencies and generated build/test output remain excluded.
+- 2026-11-08 / Completion and remote receipt:
+  Foundation01DONE. Independently fetched managed issue body matches local
+  projection exactly; issue1CLOSED/COMPLETED and actual Project11itemDone.
+  Retained managed hash/status receipt atTODO/github-sync-state.json with
+  actual2026-11-08T01:22:56.128948+05:30verification. No commits/push/public
+  deployment. README embeds actual final light-workspace capture; deep guides
+  and evidence remain separate. Native Blender run remains explicitly unverified.
+- 2026-11-08 / Executed qualification and review:
+  Source/docs/TODO checks,6model tests and7actual Edge browser cases pass.
+  Real downloadedGLB has22meshes,4crease parents,2embedded images and matches
+  reimported bounds; Khronos validator0errors/0warnings,12informational unusedUV
+  notices. Re-export passes. Model-only export excludes studio. PNG decode,
+  recipe, brief metadata, input errors, all-around controls and phone overflow
+  verified. Production site actually renders under a hosted subpath without
+  failed requests/page errors. Native Blender executable/bpy not located in
+  bounded known places; native import unexecuted, not silently equated to
+  browser roundtrip. PCFSoftShadowMap deprecation fixed with supportedPCF;
+  full focused suite rerun. Shader precision and699kB bundle advisories disclosed.
+  Inspected desktop light/dark and phone screenshots; increased control text
+  readability, then reran checks. User aesthetic approval remains separate.
+- 2026-11-08 / Tracking and local hosting:
+  Created only missing Model Room ownerProject11 after actual discovery.
+  Repositoryissue1 maps to stable modelroom-01 and real Projectitem.
+  Local finiteTODO backlink/machine mapping added; index/ledger excluded.
+  gh project list's unknown-owner error resolved through exactGraphQL reads.
+  Started requested detached loopbackVite at127.0.0.1:4173,200response and actual
+  live model verified. Store initialized/registered; first checkedMesh build
+  publishes38contexts and current basefresh. zmem initialepisodeep_1144 read back.
+- 2026-11-08 / Foundation intake:
+  Empty git checkout, no inherited application or dirty source. Owner requests
+  a static agent coworking model-inspection tool, local hosting, original logo,
+  basic manipulation and Blender downloads, followed by docs/TODO/context.
+  Keep Three.js0.186.1/Canvas2D/ESmodules/Node/npm/Playwright stack.
+- 2026-11-08 / Representation and interchange:
+  Read original modeling handoff and relevant toolchain/geometry/camera/color/
+  lifecycle chapters; researched official controls/export/color/cleanup/on-demand
+  documentation plus Blender4.5 glTF documentation. Chose actual panels/hinges
+  and standard PBR, image-backed paper/label textures, model-only binary GLB.
+  New site doesn't inherit the old application's unusual scene-scale exposure.
+  Two guessed latest Blender manual URLs and old Three color URL returned404;
+  corrected links verified instead of treating failed fetches as source evidence.
+- 2026-11-08 / Implementation:
+  Original room/cube SVG identity; responsive shelf/viewport/inspector/brief.
+  Three starter entries are honest color studies of one cardboard model.
+  Render-on-demand, complete hierarchy bounds, portable materials, local-only
+  import with external URI rejection, model-resource disposal, explicit errors.
+  No AI/backend, arbitrary text-to-mesh, imported finished asset or public hosting.

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "repository": "Zanark/ModelRoom",
+  "mode": "documented-manual-one-way",
+  "sourceOfTruth": "local numbered finite TODO files",
+  "excluded": ["00_INDEX.todo", "02_DEVELOPMENT_LEDGER.todo"],
+  "project": {
+    "owner": "Zanark",
+    "number": 11,
+    "id": "PVT_kwHOAe2wCs4BqpKD",
+    "url": "https://github.com/users/Zanark/projects/11",
+    "statusFieldId": "PVTSSF_lAHOAe2wCs4BqpKDzho_XzI",
+    "statusOptions": {
+      "NOT_STARTED": {"id": "f75ad846", "name": "Todo"},
+      "IN_PROGRESS": {"id": "47fc9ee4", "name": "In Progress"},
+      "DONE": {"id": "98236657", "name": "Done"}
+    }
+  },
+  "workstreams": {
+    "modelroom-01": {
+      "path": "TODO/01_MODEL_ROOM_FOUNDATION.todo",
+      "issueNumber": 1,
+      "issueId": "I_kwDOVmgPW88AAAABdVTXiQ",
+      "issueUrl": "https://github.com/Zanark/ModelRoom/issues/1",
+      "projectItemId": "PVTI_lAHOAe2wCs4BqpKDzhG2DPk",
+      "marker": "modelroom:workstream:modelroom-01",
+      "managedStart": "<!-- modelroom:managed:start -->",
+      "managedEnd": "<!-- modelroom:managed:end -->"
+    }
+  }
+}

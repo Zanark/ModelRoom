@@ -1,0 +1,66 @@
+Model Room - the first workbench
+Workstream-ID: modelroom-01
+Issue: https://github.com/Zanark/ModelRoom/issues/1
+Project: https://github.com/users/Zanark/projects/11
+Status: DONE
+Milestone: Locally usable static 3D inspection and Blender interchange
+Dependencies: None
+
+Purpose:
+Build the user's Model Room: an original static site where an agent-authored
+model can be rotated, inspected, refined and downloaded for Blender.
+Keep the distinction between an external coding agent and a static website explicit.
+
+Tasks:
+- [x] Inspect empty repository and original modeling handbook/toolchain.
+- [x] Research geometry, camera controls, color, resource ownership and interchange.
+- [x] Author original identity, responsive workspace and procedural cardboard box.
+- [x] Implement actual part hierarchy, four hinged flaps and live dimensions/color.
+- [x] Implement orbit/pan/zoom, camera presets, wireframe, grid and studio lighting.
+- [x] Implement local GLB inspection, model-only export, PNG and recipe downloads.
+- [x] Implement local prompt/reference brief without pretending to run an AI.
+- [x] Validate browser controls, export/roundtrip, error paths and production build.
+- [x] Complete README, guides, research receipts, journal and source contracts.
+- [x] Mirror this workstream to its real issue/Project, verify actual states.
+- [x] Persist owned context, refresh mesh and leave verified local hosting available.
+
+Acceptance criteria:
+The local website displays real geometry and allows all-around camera inspection.
+The box has separate walls/flaps, finite geometry, explicit meter scale and
+meaningful live controls. GLB contains the object/materials/embedded textures,
+not viewer infrastructure; reimport preserves shape and parts. Actual Blender
+import is tested if an existing installation is available; otherwise disclose
+that environmental limit separately from structural glTF qualification.
+Brief saving produces a real downloadable request; reference-image bytes are
+not uploaded or silently claimed as included. Bad imports preserve the model.
+Static production artifact works at a subpath without a runtime CDN.
+Local hosting is responsive and running at handoff. No public deployment.
+Docs/TODO/context and actual issue/Project agree with verified evidence.
+
+Completion evidence:
+2026-11-08: Source/docs/TODO checks and production build pass;6model tests and
+7actual Microsoft Edge browser cases pass with no skips. Real downloadedGLB
+passes Khronos validation0errors/0warnings, with12informational unusedUV notices.
+All22meshes/4crease parents/2embedded images survive, bounds match reimport and
+re-export passes; viewer stage is excluded. PNG decodes, recipe/brief content,
+explicit input failures, all-around controls and390x844phone layout verified.
+Production asset renders under a hosted subpath without page errors/failed
+requests. Original desktop light/dark and phone screenshots inspected.
+Actual local loopbackVite responds200 at127.0.0.1:4173 and remains detached
+for user testing. Own context registered and checkedMesh generated; initial
+zmemep_1144 read back. Actual issue1/Project11/item identities retained in
+.github-tracking.json; final readback digest in github-sync-state.json.
+Native Blender import unexecuted: executable/bpy not located in bounded
+existing tool locations. No Blender install, CAD/print qualification, user
+aesthetic approval, commit, push or public deployment. See docs/VERIFICATION.md.
+
+Completion log:
+2026-11-08: Owner designates empty ModelRoom and requests implementation without
+questions, with project documentation/TODOs and context refresh. Three.js0.186.1
+retained by explicit follow-up. Prior BowserBoy handbook is a read-only reference;
+ModelRoom has its own source and continuity boundaries. No commit/push requested.
+2026-11-08: Foundation technically complete with the explicit native-import
+qualification above. Unsupported required GLB extensions/compression and
+animation editing remain outside the starter, not hidden passing claims.
+Documentation, local hosting and managed issue/Project tracking are delivered;
+human aesthetic feedback remains welcome but is not fabricated as approval.

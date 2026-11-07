@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f4ef" />
+    <meta name="description" content="Model Room. A shared workbench for your ideas and agent-authored 3D models. Inspect, refine and take them into Blender." />
+    <link rel="icon" type="image/svg+xml" href="./logo.svg" />
+    <title>Model Room - A little space for big ideas</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#viewport">Skip to 3D workspace</a>
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Model Room home">
+        <img src="./logo.svg" width="38" height="38" alt="" />
+        <span>model<span class="brand-light">room</span><small>YOUR IDEAS, IN ANOTHER DIMENSION.</small></span>
+      </a>
+      <div class="topbar-center"><span class="live-dot"></span> Local workspace <span class="separator">/</span> <span>Untitled collection</span></div>
+      <div class="header-actions">
+        <button id="theme" class="icon-button" aria-label="Switch to dark theme" title="Switch theme"><span id="theme-icon" aria-hidden="true">&#9789;</span></button>
+        <button id="help-open" class="quiet-button">How it works <span aria-hidden="true">&#8599;</span></button>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <aside class="library" aria-label="Model collection">
+        <div class="section-eyebrow">THE WORKBENCH <span>01</span></div>
+        <h1>A place to<br />shape things<span class="accent">.</span></h1>
+        <p class="intro">You bring the idea.<br />Your agent brings it to life.</p>
+        <div class="library-heading"><h2>On the shelf</h2><span class="count-pill">3 studies</span></div>
+        <div class="model-cards" role="group" aria-label="Cardboard box studies">
+          <button class="model-card active" data-preset="kraft" aria-pressed="true">
+            <span class="mini-box kraft" aria-hidden="true"><i></i><b></b></span>
+            <span><strong>The everyday box</strong><small>Kraft paper / original</small></span><span class="card-arrow" aria-hidden="true">&#8599;</span>
+          </button>
+          <button class="model-card" data-preset="lilac" aria-pressed="false">
+            <span class="mini-box lilac" aria-hidden="true"><i></i><b></b></span>
+            <span><strong>A softer delivery</strong><small>Lilac / color study</small></span><span class="card-arrow" aria-hidden="true">&#8599;</span>
+          </button>
+          <button class="model-card" data-preset="ink" aria-pressed="false">
+            <span class="mini-box ink" aria-hidden="true"><i></i><b></b></span>
+            <span><strong>After hours</strong><small>Ink / color study</small></span><span class="card-arrow" aria-hidden="true">&#8599;</span>
+          </button>
+        </div>
+        <label class="import-button" for="model-file"><span aria-hidden="true">+</span> Open a local .glb<input id="model-file" type="file" accept=".glb,model/gltf-binary" /></label>
+        <p class="small-note">Your files stay in this browser.<br />No uploads. No account. Just making.</p>
+        <div class="library-bottom"><span class="tiny-cube" aria-hidden="true">&#9671;</span><p>A small room.<br /><strong>Endless possibilities.</strong></p><span class="edition">VOL. 001</span></div>
+      </aside>
+
+      <section class="work-area" aria-label="Model inspection workspace">
+        <div class="document-bar"><div><span class="file-icon" aria-hidden="true">&#9671;</span> <strong id="document-name">everyday-box</strong><span class="muted"> / study 001</span></div><span class="ready-badge" id="ready-badge"><span class="live-dot"></span> Preparing</span></div>
+        <div class="viewport-shell">
+          <div class="viewport-top"><span class="view-label">PERSPECTIVE <span id="view-name">/ FREE ORBIT</span></span><span class="studio-label"><span></span> LIVE 3D</span></div>
+          <div id="viewport" tabindex="0" role="region" aria-label="Interactive 3D model. Drag to orbit, right-drag to pan, scroll to zoom. Arrow keys orbit, plus and minus zoom, F fits.">
+            <div class="viewport-loading" id="viewport-loading"><img src="./logo.svg" width="48" height="48" alt="" /><span>Making a little room...</span></div>
+          </div>
+          <div class="viewport-caption"><span class="caption-line"></span><span id="model-caption">An ordinary object.<br /><strong>A thousand little details.</strong></span></div>
+          <nav class="view-cube" aria-label="Camera views">
+            <button data-view="top" title="Top view">T</button><button data-view="front" title="Front view">F</button><button data-view="right" title="Right view">R</button><button data-view="back" title="Back view">B</button><button data-view="left" title="Left view">L</button><button data-view="bottom" title="Bottom view">U</button><button data-view="iso" title="Isometric view">3D</button>
+          </nav>
+          <div class="viewport-toolbar" role="toolbar" aria-label="Viewer controls">
+            <button id="fit" title="Fit model (F)"><span aria-hidden="true">&#9974;</span> Fit</button>
+            <span class="toolbar-divider"></span>
+            <button id="rotate" aria-pressed="false" title="Toggle automatic rotation"><span aria-hidden="true">&#10227;</span> Orbit</button>
+            <button id="grid" aria-pressed="true"><span aria-hidden="true">&#9638;</span> Grid</button>
+            <button id="wireframe" aria-pressed="false"><span aria-hidden="true">&#11041;</span> Wire</button>
+            <span class="toolbar-divider"></span>
+            <button id="snapshot" title="Download the viewport as a PNG"><span aria-hidden="true">&#9678;</span> Capture</button>
+          </div>
+          <div class="viewport-footer"><span>DRAG TO ORBIT <b>&middot;</b> SCROLL TO ZOOM <b>&middot;</b> RIGHT-DRAG TO PAN</span><span><i class="axis-x">X</i> <i class="axis-y">Y</i> <i class="axis-z">Z</i> &nbsp; METERS</span></div>
+        </div>
+        <form class="brief-card" id="brief-form">
+          <div class="brief-heading"><label for="prompt"><span class="spark" aria-hidden="true">&#10035;</span> What should we make next?</label><span>THE HUMAN + AGENT LOOP</span></div>
+          <textarea id="prompt" rows="2" maxlength="8000" placeholder="A tiny cardboard box, softly rounded edges, warm kraft paper, four flaps that open..." required></textarea>
+          <div id="reference-list" class="reference-list"></div>
+          <div class="brief-actions"><label class="attach-button" for="references"><span aria-hidden="true">+</span> Add references<input id="references" type="file" accept="image/png,image/jpeg,image/webp" multiple /></label><small>Save a brief, then give it to your agent.</small><button class="brief-save" type="submit">Save brief <span aria-hidden="true">&#8599;</span></button></div>
+          <p class="brief-disclosure">This static room doesn't run an AI. Your agent creates the model in this project; you inspect it here.</p>
+        </form>
+      </section>
+
+      <aside class="inspector" aria-label="Model inspector">
+        <div class="section-eyebrow">MAKE IT YOURS <span aria-hidden="true">&#9881;</span></div>
+        <h2 id="model-title">The everyday box</h2><p class="model-description" id="model-description">A little study in folded paper. Built from real, separate panels, not a hollow-looking cube.</p>
+        <div class="tag-row"><span>PROCEDURAL</span><span id="material-tag">KRAFT PAPER</span></div>
+        <section class="inspector-section" id="box-controls">
+          <div class="section-title"><h3>The form</h3><span>LIVE PARAMETERS</span></div>
+          <label class="range-label" for="openness">Open the flaps <output id="openness-value">72%</output></label>
+          <input id="openness" type="range" min="0" max="100" value="72" />
+          <div class="range-ends"><span>Closed</span><span>Unfolded</span></div>
+          <div class="dimension-inputs"><label>Width <span><input id="width" type="number" min="100" max="600" step="10" value="320" aria-label="Width in millimeters" /> mm</span></label><label>Height <span><input id="height" type="number" min="100" max="600" step="10" value="240" aria-label="Height in millimeters" /> mm</span></label><label>Depth <span><input id="depth" type="number" min="100" max="600" step="10" value="260" aria-label="Depth in millimeters" /> mm</span></label></div>
+          <label class="range-label color-label" for="paper-color">Paper color <input id="paper-color" type="color" value="#b68b57" /></label>
+          <button class="text-button" id="reset-model" type="button">Reset this study <span aria-hidden="true">&#8634;</span></button>
+        </section>
+        <section class="inspector-section">
+          <div class="section-title"><h3>Set the mood</h3><span>VIEWER ONLY</span></div>
+          <div class="lighting-presets" role="group" aria-label="Studio lighting"><button data-light="studio" aria-pressed="true"><span class="light-swatch studio"></span>Studio</button><button data-light="warm" aria-pressed="false"><span class="light-swatch warm"></span>Golden</button><button data-light="cool" aria-pressed="false"><span class="light-swatch cool"></span>Cool</button></div>
+          <label class="range-label" for="light-angle">Light direction <output id="light-angle-value">35&deg;</output></label><input id="light-angle" type="range" min="0" max="360" value="35" />
+          <label class="check-label"><input id="floor" type="checkbox" checked /> Ground &amp; shadows <small>Off to inspect underneath</small></label>
+        </section>
+        <section class="inspector-section anatomy">
+          <div class="section-title"><h3>Under the surface</h3><button class="text-button" id="clear-selection">Clear</button></div>
+          <dl class="model-stats"><div><dt>Triangles</dt><dd id="triangles">-</dd></div><div><dt>Meshes</dt><dd id="meshes">-</dd></div><div><dt>Size (W &times; H &times; D)</dt><dd id="bounds">-</dd></div></dl>
+          <details><summary>Explore the parts <span id="part-count"></span></summary><div id="parts" class="parts"></div></details>
+          <p id="selection" class="selection-note">Click a part to inspect it.</p>
+        </section>
+        <div class="export-card"><span class="export-icon" aria-hidden="true">&#8600;</span><h3>Made here. Goes anywhere.</h3><p>Editable meshes, materials and textures.<br />Packed into one Blender-ready file.</p><button id="export-glb" class="primary-button" disabled>Download model <span>.GLB &#8595;</span></button><button id="export-recipe" class="secondary-button" disabled>Save construction recipe <span>.JSON</span></button><a id="blender-help" href="#help-dialog">How to open it in Blender <span aria-hidden="true">&#8599;</span></a><small>Current shape and colors. No studio clutter.</small></div>
+      </aside>
+    </main>
+    <div id="status" class="status-toast" role="status" aria-live="polite" hidden></div>
+    <dialog id="help-dialog"><form method="dialog"><button class="dialog-close" aria-label="Close help">&times;</button></form><span class="section-eyebrow">WELCOME TO MODEL ROOM</span><h2>From a thought<br />to a thing.</h2><ol><li><strong>Bring an idea.</strong> Describe the object, style, dimensions and moving parts. Attach local image references and save a brief.</li><li><strong>Make it with your agent.</strong> Give the brief and original reference files to your coding agent in this project. The brief stores filenames, not your images.</li><li><strong>Look closer.</strong> Orbit, zoom, unfold the starter box, change the lighting and explore individual parts.</li><li><strong>Take it with you.</strong> Download a GLB, then in Blender choose File &gt; Import &gt; glTF 2.0. Meshes and materials remain editable; JavaScript construction logic doesn't become Blender modifiers.</li></ol><p>All three shelf entries are color studies of the same original cardboard box. New objects are authored by your agent, not generated from arbitrary text by this page.</p><p><kbd>Drag</kbd> orbit &nbsp; <kbd>Right-drag</kbd> pan &nbsp; <kbd>Scroll</kbd> zoom<br /><kbd>F</kbd> fit &nbsp; <kbd>Arrow keys</kbd> orbit &nbsp; <kbd>+</kbd> / <kbd>-</kbd> zoom when the viewport is focused.</p></dialog>
+    <noscript>Model Room needs JavaScript and WebGL2 to display and export 3D models.</noscript>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

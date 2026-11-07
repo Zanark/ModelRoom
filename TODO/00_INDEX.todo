@@ -1,0 +1,9 @@
+Model Room workstream index
+
+01_MODEL_ROOM_FOUNDATION.todo - DONE: original static inspection workspace,
+agent brief workflow, procedural box, Blender-compatible export and local hosting.
+
+02_DEVELOPMENT_LEDGER.todo is the perpetual development journal, not a finite issue.
+Each workstream retains Status, Milestone, Dependencies, Purpose, Tasks,
+Acceptance criteria, Completion evidence and Completion log.
+Technical completion is distinct from human aesthetic approval/public deployment.

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "repository": "Zanark/ModelRoom",
+  "verifiedAt": "2026-11-08T01:22:56.128948+05:30",
+  "workstreams": {
+    "modelroom-01": {
+      "issueUrl": "https://github.com/Zanark/ModelRoom/issues/1",
+      "issueId": "I_kwDOVmgPW88AAAABdVTXiQ",
+      "issueState": "CLOSED",
+      "issueStateReason": "COMPLETED",
+      "projectItemId": "PVTI_lAHOAe2wCs4BqpKDzhG2DPk",
+      "projectStatus": "Done",
+      "managedSha256": "9cdb7df0e7050ae6413b6dcd77f45a652d613672e012e84ce2f4058fce94a1f0",
+      "normalization": "CRLF to LF only; managed text includes one leading newline; Issue/Project backlink lines excluded"
+    }
+  }
+}
